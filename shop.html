@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="font-family: 'League Spartan', sans-serif;">
+
+    <!-- navabar -->
+    <nav
+        class="sticky text-[20px] lg:text-[24px] top-0 z-10 bg-gradient-to-r from-[#5cacc7] via-[#5fafca] to-[#95cedf] shadow-lg flex items-center px-8 md:px-12 lg:px-16 py-3 justify-between">
+
+        <a href="index.html"><img id="logo" class="w-36 md:w-44" src="img/logo.png"></a>
+
+        <div id="sideBar"
+            class="absolute lg:static right-0 top-0 bg-[#5eaec9] w-0 h-screen lg:h-auto lg:w-auto lg:bg-transparent border border-gray-600 lg:bottom-0 lg:border-transparent p-0 lg:p-0 lg:flex lg:items-center duration-200 hidden">
+
+            <button id="closeBtn" class="hidden">
+                <svg class="block w-6 h-6 text-gray-700 stroke-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+            </button>
+
+            <ul id="sideBarUL"
+                class="relative flex flex-col items-start gap-8 px-5 py-4 font-semibold text-gray-700 lg:flex-row lg:items-center lg:gap-10 lg:font-bold md:px-9 lg:px-0 md:py-6 lg:py-0">
+
+
+                <li class="md:hover:text-[#927958]">
+                    <a href="index.html">Home</a>
+                </li>
+                <!-- <li
+                    class="text-[#927958] relative lg:after:absolute lg:after:w-12 lg:after:h-1 lg:after:bottom-0 lg:after:left-0 lg:after:bg-[#927958] after:rounded-2xl">
+                    <a href="shop.html">Shop</a>
+                </li> -->
+                <li class="text-[#927958]">
+                    <a href="shop.html">Shop</a>
+                </li>
+                <li class="md:hover:text-[#927958]">
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li class="md:hover:text-[#927958]">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="md:hover:text-[#927958]">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="hidden lg:block"><a href="cart.html">
+                        <svg class="w-6 h-6 text-gray-700 md:hover:text-[#927958]" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 9V4a3 3 0 0 0-6 0v5m9.92 10H2.08a1 1 0 0 1-1-1.077L2 6h14l.917 11.923A1 1 0 0 1 15.92 19Z" />
+                        </svg>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="flex items-center gap-8 lg:hidden md:gap-12">
+            <li class="block lg:hidden">
+                <a href="cart.html">
+                    <svg class="w-6 h-6 stroke-2 text-gray-700 md:hover:text-[#927958]" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 9V4a3 3 0 0 0-6 0v5m9.92 10H2.08a1 1 0 0 1-1-1.077L2 6h14l.917 11.923A1 1 0 0 1 15.92 19Z" />
+                    </svg>
+                </a>
+            </li>
+
+            <li id="openBtn" class="block lg:hidden">
+
+                <svg class="stroke-2 w-7 h-7 fill-gray-700" xmlns="http://www.w3.org/2000/svg" height="24"
+                    viewBox="0 -960 960 960" width="24">
+                    <path
+                        d="M120-240v-80h520v80H120Zm664-40L584-480l200-200 56 56-144 144 144 144-56 56ZM120-440v-80h400v80H120Zm0-200v-80h520v80H120Z" />
+                </svg>
+            </li>
+        </div>
+
+
+    </nav>
+
+    <main id="main" class="duration-300">
+
+
+        <!-- Banner -->
+        <section class="relative">
+            <picture>
+                <img class="w-screen h-36 md:h-auto" src="img/banner/b2.jpg">
+            </picture>
+
+            <div
+                class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center gap-1 m-auto text-gray-300 md:gap-3 lg:gap-5">
+                <p class="text-lg font-bold md:text-xl lg:text-2xl">Repair Services</p>
+                <h1 class="text-xl font-bold md:text-4xl lg:text-6xl">Up to <span class="text-red-600">70% OFF</span> -
+                    All t-Shirts</h1>
+                <button
+                    class="bg-gray-300 text-gray-700 px-2 md:px-3 lg:px-4 pt-[1px] md:py-[2px] lg:py-2 text-base md:text-lg lg:text-xl font-semibold md:hover:bg-[#187c72] md:hover:text-gray-300">Explore
+                    More</button>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- News-letter -->
+        <section class="bg-[#031d42] flex flex-col lg:flex-row items-center justify-between gap-5 lg:gap-0 px-16 py-10">
+            <div class="flex flex-col items-center lg:block">
+                <p class="text-xl font-extrabold text-gray-300 md:text-2xl">Sign Up for Newsletter</p>
+                <p class="text-xs text-center text-gray-300 md:text-base lg:text-left">Get E-mail updates about our
+                    latest shop and <span class="text-yellow-500">special offers</span></p>
+            </div>
+            <div class="flex items-center overflow-hidden text-xs rounded-md md:text-sm lg:text-base">
+                <input class="w-40 px-3 py-1 bg-gray-100 md:w-52 lg:w-64 lg:py-2" type="email"
+                    placeholder="Enter your email">
+                <button class="px-2 md:px-3 lg:px-4 py-1 lg:py-2 bg-[#187c72] text-gray-100">Sign Up</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="grid grid-cols-1 pt-10 pb-8 text-gray-500 md:grid-cols-2 lg:grid-cols-4 px-9 md:px-12 lg:px-16">
+
+        <ul class="mb-12 lg:mb-0">
+            <li class="my-4 font-semibold text-gray-700">Contact</li>
+            <li><span class="font-semibold text-gray-700">Address:</span> 562 ipsum dolor, sit amet consectetur
+                adipisicing.</li>
+            <li><span class="font-semibold text-gray-700">Phone:</span> 1234567890</li>
+            <li><span class="font-semibold text-gray-700">Hours:</span> 24/7</li>
+            <li class="my-2 font-semibold text-gray-700">Follow Us:</li>
+            <li class="flex gap-1">
+
+                <a href="#">
+                    <svg class="w-4 h-4" className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                        <path fill-rule="evenodd"
+                            d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+
+                <a href="#">
+                    <svg class="w-4 h-4" className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path fill="currentColor"
+                            d="M12.186 8.672 18.743.947h-2.927l-5.005 5.9-4.44-5.9H0l7.434 9.876-6.986 8.23h2.927l5.434-6.4 4.82 6.4H20L12.186 8.672Zm-2.267 2.671L8.544 9.515 3.2 2.42h2.2l4.312 5.719 1.375 1.828 5.731 7.613h-2.2l-4.699-6.237Z" />
+                    </svg>
+                </a>
+
+                <a href="#">
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" height="16" width="14"
+                        viewBox="0 0 448 512">
+                        <path opacity="1" fill="#1E3050"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </a>
+
+                <a href="#">
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                        viewBox="0 0 384 512">
+                        <path opacity="1" fill="#1E3050"
+                            d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z" />
+                    </svg>
+                </a>
+
+                <a href="#">
+                    <svg class="w-4 h-4" className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
+                        <path fill-rule="evenodd"
+                            d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="lg:justify-self-center md:justify-self-center md:w-[14.5rem] mb-12 md:mb-0">
+            <li class="my-4 font-semibold text-gray-700">About</li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditio</a>ns</li>
+            <li><a href="#">Contact US</a></li>
+        </ul>
+
+        <ul class="mb-12 lg:justify-self-center md:mb-0">
+            <li class="my-4 font-semibold text-gray-700 ">My Account</li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">View Cart</a></li>
+            <li><a href="#">My Wishlist</a></li>
+            <li><a href="#">Track My Order</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+
+        <ul class="lg:justify-self-end md:justify-self-center">
+            <li class="my-4 font-semibold text-gray-700">Install App</li>
+            <li>From App Store or Google Play</li>
+            <li class="flex gap-2 py-2">
+                <a href="#">
+                    <img class="w-28" src="img/gplayLogo.png">
+                </a>
+                <a href="#">
+                    <img class="w-28" src="img/appstorLogo.png">
+                </a>
+            </li>
+            <li>Secured Payment Gateway</li>
+            <li class="flex">
+                <a href="#"><img class="w-14" src="img/mastercard.png"></a>
+                <a href="#"><img class="w-14" src="img/visa.png"></a>
+                <a href="#"><img class="w-14" src="img/paypal.png"></a>
+                <a href="#"><img class="w-14" src="img/gpay.png"></a>
+
+            </li>
+        </ul>
+    </footer>
+
+
+    <!-- credit -->
+    <p class="mb-10 text-center text-gray-400">© 2024 <a href="https://github.com/developer-256/" target="_blank">Click
+            Here for
+            Developer's
+            Github</a></p>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
